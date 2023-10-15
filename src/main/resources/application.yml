@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    #url: jdbc:h2:mem:mydb
+    url: jdbc:h2:file:~/mydb
+    username: user123
+    password: password123
+    driverClassName: org.h2.Driver
